@@ -1,0 +1,43 @@
+.nav-list{
+  list-style-type: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  left: 0;
+  top: 100%;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdown-content .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.login-btn{
+  background-color: transparent;
+}
+
+.login-btn:hover {
+  transition: all 700ms ease-out;
+  background-color: #036dc3;
+}
