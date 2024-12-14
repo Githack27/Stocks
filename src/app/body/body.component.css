@@ -1,0 +1,42 @@
+.ntbcustom{
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  width: 120px;
+  border:none;
+  outline: none;
+  border-radius: 0;
+}
+
+.ntbcustom:hover {
+  transition: all 500ms ease-in;
+  color: black;
+  background-color: transparent;
+  border: 1px solid #ff8d21;
+}
+
+.signUp-banner{
+  height: 80px;
+  background-color: #f0f4fd;
+  border-radius: 15px;
+}
+
+.banner-para p{
+  font-size: 18px;
+}
+
+.stocks-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.card{
+  width: 15rem;
+}
+
+@media (max-width:750px){
+  .signUp-banner p{
+    font-size: 14px;
+  }
+}
