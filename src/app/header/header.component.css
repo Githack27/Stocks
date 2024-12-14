@@ -1,0 +1,36 @@
+.navbar{
+  height: 50vh;
+}
+
+.nav-list{
+  list-style-type: none;
+}
+
+.nav-link:hover{
+  text-decoration: underline;
+  color: white;
+  text-underline-offset: 7px;
+}
+
+.ntbcustom{
+  background-color: #ff8d21;
+  color: black;
+  font-weight: 600;
+  border:none;
+  outline: none;
+}
+
+.ntbcustom:hover {
+  transition: all 500ms ease-in;
+  color: white;
+  background-color: transparent;
+  border: 1px solid #ff8d21;
+}
+
+.hcraesLfts{
+  width: 300px;
+}
+
+.form-search{
+  box-shadow: none;
+}

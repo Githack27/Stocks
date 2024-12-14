@@ -1,0 +1,15 @@
+<div class="search-field">
+  <form class="d-flex flex-row align-items-center" (ngSubmit)="onSubmit()">
+    <select class="search-select form-select w-25">
+      <option value="assets">Assets</option>
+      <option value="collections">Collections</option>
+      <option value="vectors">Vectors</option>
+      <option value="photo">Photos</option>
+      <option value="icon">Icons</option>
+      <option value="video">Videos</option>
+    </select>
+    <input type="search" class="form-control search-field me-2" [placeholder]="placeholderText" [(ngModel)]="searchQuery" name="searchQuery" />
+    <i class="fas fa-search search-icon fs-5 me-2" (click)="onSubmit()"></i>
+    <i class="bi bi-stars stars-icon fs-5 me-2"></i>
+  </form>
+</div>
