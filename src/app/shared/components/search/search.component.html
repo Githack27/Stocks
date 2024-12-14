@@ -10,7 +10,6 @@
     </select>
     <input type="search" class="form-control search-field me-2" [placeholder]="placeholderText" [(ngModel)]="searchQuery" name="searchQuery" />
     <i class="fas fa-search search-icon fs-5 me-2" (click)="onSubmit()"></i>
-    <i class="bi bi-stars stars-icon fs-5 me-2" (mouseover)="showPopup=true" (mouseleave)="showPopup=false"></i>
-    <div *ngIf="showPopup" class="popup">Stars icon hover popup!</div>
+    <i class="bi bi-stars stars-icon fs-5 me-2"></i>
   </form>
 </div>

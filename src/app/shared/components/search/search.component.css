@@ -12,6 +12,14 @@
   box-shadow: none;
 }
 
+.search-icon{
+  cursor: pointer;
+}
+
+.stars-icon{
+  cursor: pointer;
+}
+
 .popup {
   position: absolute;
   top: 210px;

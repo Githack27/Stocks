@@ -12,7 +12,6 @@ import { FormsModule } from '@angular/forms';
 export class SearchComponent {
   @Input() placeholderText: string = '';
   searchQuery: string = '';
-  showPopup: boolean = false;
   onSubmit(): void {
     console.log('Search Query Submitted:', this.searchQuery);
   }
