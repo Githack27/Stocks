@@ -1,0 +1,29 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  left: 0;
+  top: 100%;
+  width: 15vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.dropdown-content .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+

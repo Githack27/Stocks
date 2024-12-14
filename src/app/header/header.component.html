@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+<nav class="navbar navbar-expand-lg navbar-dark bg-black flex-column justify-content-between">
   <div class="container-fluid">
     <a class="navbar-brand d-flex flex-row" href="#">
-      <img class="me-1" src="../../assets/Images/Icon_White.png" width="30" height="30"/>
-      <h3 class="m-0">STOCKS</h3>
+      <img class="me-1" src="../../assets/Images/Icon_White.png" width="20" height="20"/>
+      <h5 class="m-0">STOCKS</h5>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#LsftIDES">
       <span class="navbar-toggler-icon"></span>
@@ -17,43 +17,39 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-start flex-grow-1 pe-2">
           <li class="nav-item">
-            <a class="nav-link active fs-6" aria-current="page" href="#">Images</a>
+            <a class="nav-link fs-6" aria-current="page" href="#">Images</a>
           </li>
           <li class="nav-item">
             <a class="nav-link fs-6" aria-current="page" href="#">Videos</a>
           </li>
           <li class="nav-item">
-            <div class="dropdown">
-              <a class="nav-link fs-6" href="#">Graphics</a>
-              <div class="dropdown-content">
-                  <div class="grid">
-                      <a class="nav-link fs-6" href="#">Templates</a>
-                      <a class="nav-link fs-6" href="#">3D Models</a>
-                      <a class="nav-link fs-6" href="#">Backgrounds</a>
-                      <a class="nav-link fs-6" href="#">Presentation</a>
-                      <a class="nav-link fs-6" href="#">Patterns</a>
-                      <a class="nav-link fs-6" href="#">UI Elements</a>
-                  </div>
-              </div>
-            </div>
+            <app-nav-dropdown [mainLink]="graphics" [dropdownLinks]="graphicsDropdown" />
           </li>
           <li class="nav-item">
             <a class="nav-link fs-6" aria-current="page" href="#">Books & Pdfs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-6" aria-current="page" href="#">Presentation Templates</a>
+            <app-nav-dropdown [mainLink]="Presentations" [dropdownLinks]="presentationDropdown" />
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-6" aria-current="page" href="#">Fonts & Icons</a>
+            <a class="nav-link fs-6" aria-current="page" href="#">Fonts</a>
           </li>
           <li class="nav-item">
             <a class="nav-link fs-6" aria-current="page" href="#">Add-Ons</a>
           </li>
         </ul>
       </div>
-      <div class="align-self-center">
-        <button class="login-btn btn btn-primary">Sign In</button>
+      <div class="d-flex flex-row align-self-center mb-lg-0 mb-3">
+        <button class="ntbcustom btn btn-primary me-2">Pricing</button>
+        <button class="ntbcustom btn btn-primary">Sign In</button>
       </div>
     </div>
+  </div>
+  <div class="desc align-self-center text-center">
+    <h2 class="fw-bolder text-white fs-1">Smarter creativity, Faster Designs</h2>
+    <h4 class="fw-bolder text-white">Everything you need, from stock images and videos to AI-powered design tools</h4>
+</div>
+  <div class="hcraesLfts">
+    <app-button-toggle [FirstText]="'Search'" [LastText]="'Create'" />
   </div>
 </nav>
