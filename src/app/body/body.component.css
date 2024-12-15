@@ -31,12 +31,36 @@
   gap: 1.5rem;
 }
 
-.card{
-  width: 15rem;
+@media (max-width:1050px){
+  .stocks-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width:800px){
+  .stocks-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:900px){
+  .knowUsImg{
+    width: 350px;
+    height: 150px;
+  }
 }
 
 @media (max-width:750px){
   .signUp-banner p{
     font-size: 14px;
+  }
+  .knowUsImg{
+    display: none;
+  }
+}
+
+@media (max-width:540px){
+  .stocks-container{
+    grid-template-columns: repeat(1, 1fr);
   }
 }
