@@ -9,30 +9,18 @@
   </div>
 
   <div class="text-center mt-5">
-    <h3>Find Your Favourite's</h3>
+    <h3>Explore the Magic and have Unlimited Funs</h3>
     <p>Check out our best stocks and choose your choice</p>
   </div>
 
-  <div class="stocks-container">
-    <div class="card">
-      <img src="../../assets/Images/Icon.png" class="card-img-top" alt="">
-    </div>
-    <div class="card">
-      <img src="../../assets/Images/Icon.png" class="card-img-top" alt="">
-    </div>
-    <div class="card">
-      <img src="../../assets/Images/Icon.png" class="card-img-top" alt="">
-    </div>
-    <div class="card">
-      <img src="../../assets/Images/Icon.png" class="card-img-top" alt="">
-    </div>
-    <div class="card">
-      <img src="../../assets/Images/Icon.png" class="card-img-top" alt="">
-    </div>
-    <div class="card">
-      <img src="../../assets/Images/Icon.png" class="card-img-top" alt="">
-    </div>
+  <app-video-displayer [videoLinks]="videoLinks" />
+
+  <div class="text-center mt-5">
+    <h3>Find Your Favourite's</h3>
+    <p>Looking for something, We have everything.</p>
   </div>
+
+  <app-card [cardLinks]="cardLinks" />
 
   <h4 class="text-center mt-5 mb-1">Know About Us</h4>
   <div class="container-fluid d-flex flex-row align-items-center">
