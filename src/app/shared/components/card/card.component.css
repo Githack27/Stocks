@@ -59,3 +59,32 @@
 .card-image-container:hover .card-caption {
   opacity: 1;
 }
+
+@media (max-width: 1200px){
+  .grid-container {
+    column-count: 3;
+    column-gap: 10px;
+    padding: 10px;
+    height: fit-content;
+  }
+}
+
+@media (max-width: 850px){
+  .grid-container {
+    column-count: 2;
+    column-gap: 10px;
+    padding: 10px;
+    height: fit-content;
+  }
+}
+
+@media (max-width: 600px){
+  .grid-container {
+    column-count: 1;
+    padding: 10px;
+    height: fit-content;
+  }
+  .card-caption{
+    display: none;
+  }
+}
