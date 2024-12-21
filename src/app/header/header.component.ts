@@ -14,10 +14,12 @@ export class HeaderComponent {
   graphicsDropdown = [
     { text: 'Templates', href: '#' },
     { text: '3D Models', href: '#' },
-    { text: 'Backgrounds', href: '#' },
+    { text: 'Gifs', href: '#' },
     { text: 'Icons', href: '#' },
-    { text: 'Patterns', href: '#' },
-    { text: 'UI Elements', href: '#' }
+    { text: 'Vectors', href: '#' },
+    { text: 'UI Elements', href: '#' },
+    { text: 'Wallpaper', href: '#' },
+    { text: 'Cards', href: '#' }
   ];
   Presentations = { text: 'Presentation Templates', href: '#' };
   presentationDropdown = [

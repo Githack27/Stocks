@@ -1,0 +1,10 @@
+<div class="grid-container">
+  <div *ngFor="let link of videoLinks" class="video-container"
+    (mouseenter)="playVideo($event)"
+    (mouseleave)="pauseVideo($event)">
+    <video muted>
+      <source [src]="link.videosrc" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>

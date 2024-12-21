@@ -1,0 +1,8 @@
+<div class="grid-container">
+  <figure *ngFor="let link of cardLinks" class="card-container">
+    <div class="card-image-container">
+      <img [src]="link.Imagesrc" class="card-img-top" alt="Card Image">
+      <figcaption class="card-caption">{{ link.Caption }} <button class="mt-2 prompt-btn btn btn-primary bg-none align-self-start">Use this Prompt</button></figcaption>
+    </div>
+  </figure>
+</div>

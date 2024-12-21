@@ -1,0 +1,90 @@
+.grid-container {
+  column-count: 4;
+  column-gap: 16px;
+  padding: 16px;
+  height: fit-content;
+}
+
+.card-container {
+  display: inline-block;
+  break-inside: avoid;
+}
+
+.card-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-top {
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.card-caption {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+.prompt-btn{
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  outline: none;
+  border: 1px solid black;
+  font-size: 18px;
+  border-radius: 50px;
+}
+
+.prompt-btn:hover{
+  background: rgba(0, 0, 0, 0.1);
+  transition: all 500ms ease-in-out;
+}
+
+.card-image-container:hover .card-caption {
+  opacity: 1;
+}
+
+@media (max-width: 1200px){
+  .grid-container {
+    column-count: 3;
+    column-gap: 10px;
+    padding: 10px;
+    height: fit-content;
+  }
+}
+
+@media (max-width: 850px){
+  .grid-container {
+    column-count: 2;
+    column-gap: 10px;
+    padding: 10px;
+    height: fit-content;
+  }
+}
+
+@media (max-width: 600px){
+  .grid-container {
+    column-count: 1;
+    padding: 10px;
+    height: fit-content;
+  }
+  .card-caption{
+    display: none;
+  }
+}

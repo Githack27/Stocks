@@ -1,0 +1,73 @@
+.ntbcustom{
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  border:none;
+  outline: none;
+  border-radius: 0;
+}
+
+.ntbcustom:hover {
+  transition: all 500ms ease-in;
+  color: black;
+  background-color: transparent;
+  border: 1px solid #ff8d21;
+}
+
+.signUp-banner{
+  height: 80px;
+  background-color: #f0f4fd;
+  border-radius: 15px;
+}
+
+.banner-para p{
+  font-size: 18px;
+}
+
+.stocks-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width:1050px){
+  .stocks-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width:900px){
+  .signUp-banner p{
+    font-size: 14px;
+  }
+  .signUp-btn{
+    width: 130px;
+    font-size: 14;
+  }
+}
+
+@media (max-width:780px){
+  .signUp-banner p{
+    font-size: 14px;
+  }
+  .signUp-btn{
+    width: 130px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width:640px){
+  .signUp-banner p{
+    font-size: 14px;
+  }
+  .ntbcustom{
+    width: 130px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width:540px){
+  .stocks-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
