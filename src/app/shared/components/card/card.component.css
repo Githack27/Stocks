@@ -1,0 +1,17 @@
+.grid-container {
+  column-count: 4;
+  column-gap: 16px;
+  padding: 16px;
+  height: fit-content;
+}
+
+.card-container {
+  display: inline-block;
+  break-inside: avoid;
+}
+
+.card-img-top {
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
