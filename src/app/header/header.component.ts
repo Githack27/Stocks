@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavDropdownComponent } from "../shared/components/nav-dropdown/nav-dropdown.component";
 import { ButtonToggleComponent } from "../shared/components/button-toggle/button-toggle.component";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -10,6 +11,11 @@ import { ButtonToggleComponent } from "../shared/components/button-toggle/button
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  constructor(private router: Router) {}
+
+  navigateToLogin() {
+    this.router.navigate(['/login']);
+  }
   graphics = { text: 'Graphics', href: '#' };
   graphicsDropdown = [
     { text: 'Templates', href: '#' },

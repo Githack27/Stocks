@@ -16,8 +16,11 @@ playVideo(event: Event): void {
   if (video) video.play();
 }
 
-pauseVideo(event: Event): void {
+resetVideo(event: Event): void {
   const video = (event.target as HTMLElement).querySelector('video') as HTMLVideoElement;
-  if (video) video.pause();
+  if (video) {
+    video.pause();
+    video.currentTime = 0;
+  }
 }
 }
