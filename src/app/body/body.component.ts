@@ -11,17 +11,17 @@ import { VideoDisplayerComponent } from "../shared/components/video-displayer/vi
 })
 export class BodyComponent {
 cardLinks = [
-  {Imagesrc: "../../assets/Cards/11.jpg"},
-  {Imagesrc: "../../assets/Cards/13.jpg"},
-  {Imagesrc: "../../assets/Cards/2.jpg"},
-  {Imagesrc: "../../assets/Cards/5.jpg"},
-  {Imagesrc: "../../assets/Cards/3.jpg"},
-  {Imagesrc: "../../assets/Cards/6.jpg"},
-  {Imagesrc: "../../assets/Cards/7.jpg"},
-  {Imagesrc: "../../assets/Cards/8.jpg"},
-  {Imagesrc: "../../assets/Cards/9.jpg"},
-  {Imagesrc: "../../assets/Cards/10.jpg"},
-  {Imagesrc: "../../assets/Cards/12.jpg"},
+  {Imagesrc: "../../assets/Cards/11.jpg", Caption: "A graceful woman dressed in a traditional red lace outfit with intricate patterns, sitting elegantly near a serene water body. Her attire includes delicate feathered cuffs, and she wears a pearl necklace that complements her sophisticated look. The scene captures a tranquil and artistic ambiance, with soft natural lighting highlighting her poise and elegance."},
+  {Imagesrc: "../../assets/Cards/13.jpg", Caption: ""},
+  {Imagesrc: "../../assets/Cards/2.jpg", Caption: ""},
+  {Imagesrc: "../../assets/Cards/5.jpg", Caption: ""},
+  {Imagesrc: "../../assets/Cards/3.jpg", Caption: ""},
+  {Imagesrc: "../../assets/Cards/6.jpg", Caption: ""},
+  {Imagesrc: "../../assets/Cards/7.jpg", Caption: ""},
+  {Imagesrc: "../../assets/Cards/8.jpg", Caption: ""},
+  {Imagesrc: "../../assets/Cards/9.jpg", Caption: ""},
+  {Imagesrc: "../../assets/Cards/10.jpg", Caption: ""},
+  {Imagesrc: "../../assets/Cards/12.jpg", Caption: ""},
 
 ]
 

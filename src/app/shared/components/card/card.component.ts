@@ -9,5 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './card.component.css'
 })
 export class CardComponent {
-@Input() cardLinks: { Imagesrc: string}[] = []
+@Input() cardLinks: { Imagesrc: string, Caption: string}[] = []
 }
