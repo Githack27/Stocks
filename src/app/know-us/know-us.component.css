@@ -1,7 +1,0 @@
-.accordion{
-  font-family: 'Roboto', sans-serif;
-}
-
-.accordion-button::after {
-  display: none;
-}

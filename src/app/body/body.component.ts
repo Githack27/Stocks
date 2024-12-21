@@ -1,30 +1,28 @@
 import { Component } from '@angular/core';
-import { KnowUsComponent } from "../know-us/know-us.component";
 import { CardComponent } from "../shared/components/card/card.component";
 import { VideoDisplayerComponent } from "../shared/components/video-displayer/video-displayer.component";
 
 @Component({
   selector: 'app-body',
   standalone: true,
-  imports: [KnowUsComponent, CardComponent, VideoDisplayerComponent],
+  imports: [CardComponent, VideoDisplayerComponent],
   templateUrl: './body.component.html',
   styleUrl: './body.component.css'
 })
 export class BodyComponent {
 cardLinks = [
-  {Imagesrc: "../../assets/Cards/nature-8692760_1280.jpg"},
-  {Imagesrc: "../../assets/Cards/couch-williams-302-3d-model-obj-fbx-blend.jpg"},
-  {Imagesrc: "../../assets/Cards/68zz3qq6.jpg"},
-  {Imagesrc: "../../assets/Cards/strawberry-3d-model-cfe08db977.jpg"},
-  {Imagesrc: "../../assets/Cards/nature-8692760_1280.jpg"},
-  {Imagesrc: "../../assets/Cards/stars-6726176_1280.jpg"},
-  {Imagesrc: "../../assets/Cards/village-9236268_1920.jpg"},
-  {Imagesrc: "../../assets/Cards/nature-8692760_1280.jpg"},
-  {Imagesrc: "../../assets/Cards/couch-williams-302-3d-model-obj-fbx-blend.jpg"},
-  {Imagesrc: "../../assets/Cards/68zz3qq6.jpg"},
-  {Imagesrc: "../../assets/Cards/nature-8692760_1280.jpg"},
-  {Imagesrc: "../../assets/Cards/stars-6726176_1280.jpg"},
-  {Imagesrc: "../../assets/Cards/village-9236268_1920.jpg"}
+  {Imagesrc: "../../assets/Cards/11.jpg"},
+  {Imagesrc: "../../assets/Cards/13.jpg"},
+  {Imagesrc: "../../assets/Cards/2.jpg"},
+  {Imagesrc: "../../assets/Cards/5.jpg"},
+  {Imagesrc: "../../assets/Cards/3.jpg"},
+  {Imagesrc: "../../assets/Cards/6.jpg"},
+  {Imagesrc: "../../assets/Cards/7.jpg"},
+  {Imagesrc: "../../assets/Cards/8.jpg"},
+  {Imagesrc: "../../assets/Cards/9.jpg"},
+  {Imagesrc: "../../assets/Cards/10.jpg"},
+  {Imagesrc: "../../assets/Cards/12.jpg"},
+
 ]
 
 videoLinks = [
@@ -33,5 +31,12 @@ videoLinks = [
   {videosrc: "../../assets/Videos/230248_small.mp4"},
   {videosrc: "../../assets/Videos/233867_medium.mp4"},
   {videosrc: "../../assets/Videos/240320_small.mp4"},
+  {videosrc: "../../assets/Videos/waterfall.mp4"},
+  {videosrc: "../../assets/Videos/droneview.mp4"},
+  {videosrc: "../../assets/Videos/book.mp4"},
+  {videosrc: "../../assets/Videos/dna.mp4"},
+  {videosrc: "../../assets/Videos/watersplash.mp4"},
+  {videosrc: "../../assets/Videos/bombblast.mp4"},
+  {videosrc: "../../assets/Videos/dsblast.mp4"},
 ]
 }
