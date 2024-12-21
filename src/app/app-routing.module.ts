@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BodyComponent } from './body/body.component';
 import { LoginComponent } from './shared/pages/login/login.component';
+import { ImagesComponent } from './shared/pages/images/images.component';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { LoginComponent } from './shared/pages/login/login.component';
     FooterComponent,
     BodyComponent,
     LoginComponent,
+    ImagesComponent,
     BrowserModule, RouterModule.forRoot(routes)
   ],
   providers: [],

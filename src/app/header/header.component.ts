@@ -16,6 +16,10 @@ export class HeaderComponent {
   navigateToLogin() {
     this.router.navigate(['/login']);
   }
+
+  navigateToImages(){
+    this.router.navigate(['/images']);
+  }
   graphics = { text: 'Graphics', href: '#' };
   graphicsDropdown = [
     { text: 'Templates', href: '#' },

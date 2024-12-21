@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { CardComponent } from "../shared/components/card/card.component";
 import { VideoDisplayerComponent } from "../shared/components/video-displayer/video-displayer.component";
+import { FooterComponent } from "../footer/footer.component";
+import { HeaderComponent } from "../header/header.component";
 
 @Component({
   selector: 'app-body',
   standalone: true,
-  imports: [CardComponent, VideoDisplayerComponent],
+  imports: [CardComponent, VideoDisplayerComponent, FooterComponent, HeaderComponent],
   templateUrl: './body.component.html',
   styleUrl: './body.component.css'
 })
