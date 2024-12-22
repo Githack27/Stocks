@@ -3,3 +3,11 @@
 *{
   font-family: 'Roboto Slab', serif;
 }
+
+.ntbcustom{
+  background-color: #ff8d21;
+  color: black;
+  font-weight: 600;
+  border:none;
+  outline: none;
+}

@@ -16,7 +16,7 @@
   background-color: #ff8d21;
   color: black;
   font-weight: 600;
-  border:none;
+  border:1px solid #ff8d21;
   outline: none;
 }
 
@@ -24,7 +24,6 @@
   transition: all 500ms ease-in;
   color: white;
   background-color: transparent;
-  border: 1px solid #ff8d21;
 }
 
 .hcraesLfts{
