@@ -1,24 +1,21 @@
 import { Component } from '@angular/core';
 import { NavDropdownComponent } from "../shared/components/nav-dropdown/nav-dropdown.component";
 import { ButtonToggleComponent } from "../shared/components/button-toggle/button-toggle.component";
-import { Router } from '@angular/router';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NavDropdownComponent, ButtonToggleComponent],
+  imports: [NavDropdownComponent, ButtonToggleComponent, RouterLink, RouterLinkActive],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
+
 export class HeaderComponent {
   constructor(private router: Router) {}
 
   navigateToLogin() {
     this.router.navigate(['/login']);
-  }
-
-  navigateToImages(){
-    this.router.navigate(['/images']);
   }
   graphics = { text: 'Graphics', href: '#' };
   graphicsDropdown = [

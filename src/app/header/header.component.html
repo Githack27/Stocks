@@ -17,25 +17,25 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-start flex-grow-1 pe-2">
           <li class="nav-item">
-            <a class="nav-link fs-6" aria-current="page">Images</a>
+            <a class="nav-link fs-6" routerLink="/images" routerLinkActive="active" aria-current="page">Images</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-6" aria-current="page" href="#">Videos</a>
+            <a class="nav-link fs-6" routerLink="/videos" routerLinkActive="active" aria-current="page" href="#">Videos</a>
           </li>
           <li class="nav-item">
             <app-nav-dropdown [mainLink]="graphics" [dropdownLinks]="graphicsDropdown" />
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-6" aria-current="page" href="#">Books & Pdfs</a>
+            <a class="nav-link fs-6" routerLink="/booksAndpdf" routerLinkActive="active" aria-current="page" href="#">Books & Pdfs</a>
           </li>
           <li class="nav-item">
             <app-nav-dropdown [mainLink]="Presentations" [dropdownLinks]="presentationDropdown" />
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-6" aria-current="page" href="#">Fonts</a>
+            <a class="nav-link fs-6" routerLink="/fonts" routerLinkActive="active" aria-current="page" href="#">Fonts</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-6" aria-current="page" href="#">Audio and Music</a>
+            <a class="nav-link fs-6" routerLink="/music" routerLinkActive="active" aria-current="page" href="#">Audio and Music</a>
           </li>
         </ul>
       </div>
