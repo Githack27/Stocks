@@ -10,4 +10,5 @@ import { CommonModule } from '@angular/common';
 })
 export class CardComponent {
 @Input() cardLinks: { Imagesrc: string, Caption: string}[] = []
+@Input() showPromptButton: boolean = false;
 }

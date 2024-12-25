@@ -28,7 +28,7 @@ cardLinks = [
 ]
 
 videoLinks = [
-  {videosrc: "../../assets/Videos/204565-924698132_small.mp4"},
+  {videosrc: "../../assets/Videos/raining.mp4"},
   {videosrc: "../../assets/Videos/214940_small.mp4"},
   {videosrc: "../../assets/Videos/230248_small.mp4"},
   {videosrc: "../../assets/Videos/233867_medium.mp4"},

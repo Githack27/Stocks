@@ -10,6 +10,8 @@
 video{
   width: 450px;
   height: 250px;
+  outline: none;
+  border-radius: 1rem;
 }
 
 .video-container {
