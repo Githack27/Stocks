@@ -1,5 +1,21 @@
-<app-page-header></app-page-header>
+<div class="hkepasegami">
+  <app-page-header></app-page-header>
 
-<app-category-carousel></app-category-carousel>
+  <div class="text-center mt-5">
+    <h2>Find Most Choosen Categories</h2>
+    <p>Trending options are here only for you</p>
+  </div>
 
-<app-footer></app-footer>
+  <app-category-carousel [blocks]="imagesblock"></app-category-carousel>
+
+  <app-fortune-cookie></app-fortune-cookie>
+
+  <div class="mx-5 mt-5">
+    <h2>Discover Stunning Visuals</h2>
+    <p>Explore our curated collection of breathtaking stock images.</p>
+  </div>
+  <app-collections-carousel [backgroundUrls]="collectionBackgorunds"></app-collections-carousel>
+
+  <app-footer></app-footer>
+</div>
+

@@ -10,4 +10,5 @@ import { CommonModule } from '@angular/common';
 export class NavDropdownComponent {
   @Input() mainLink!: { text: string, href: string };
   @Input() dropdownLinks: { text: string, href: string }[] = [];
+  @Input() pageHeader: boolean = false;
 }

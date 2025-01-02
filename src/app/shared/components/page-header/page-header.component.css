@@ -6,9 +6,17 @@
   list-style-type: none;
 }
 
+.nav-link{
+  font-weight: bold;
+  color: black;
+}
+
+.navbar-nav .nav-link.active{
+  color: black;
+}
+
 .nav-link:hover{
   text-decoration: underline;
-  color: white;
   text-underline-offset: 7px;
 }
 
@@ -22,6 +30,5 @@
 
 .ntbcustom:hover {
   transition: all 500ms ease-in;
-  color: white;
   background-color: transparent;
 }

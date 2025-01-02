@@ -1,15 +1,15 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-black flex-column justify-content-between">
+<nav class="navbar navbar-expand-lg navbar-dark flex-column justify-content-between">
   <div class="container-fluid">
     <a class="navbar-brand d-flex flex-row" href="#">
-      <img class="me-1" src="../../assets/Images/Icon_White.png" width="20" height="20"/>
-      <h5 class="m-0">STOCKS</h5>
+      <img class="me-1" src="../../../../assets/Images/Icon.png" width="20" height="20"/>
+      <h5 class="m-0 text-black fw-bolder">STOCKS</h5>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#LsftIDES">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="offcanvas offcanvas-start d-flex flex-lg-row justify-content-between text-bg-dark" tabindex="-1" id="LsftIDES" aria-labelledby="lebalrabvan">
+    <div class="offcanvas offcanvas-start d-flex flex-lg-row justify-content-between text-bg-light" tabindex="-1" id="LsftIDES" aria-labelledby="lebalrabvan">
       <div class="offcanvas-header">
-        <img class="me-1" src="../../assets/Images/Icon_White.png" width="30" height="30"/>
+        <img class="me-1" src="../../../../assets/Images/Icon.png" width="30" height="30"/>
         <h5 class="offcanvas-title" id="lebalrabvan">STOCKS</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
@@ -23,13 +23,13 @@
             <a class="nav-link fs-6" routerLink="/videos" routerLinkActive="active" aria-current="page" href="#">Videos</a>
           </li>
           <li class="nav-item">
-            <app-nav-dropdown [mainLink]="graphics" [dropdownLinks]="graphicsDropdown" />
+            <app-nav-dropdown [pageHeader]="true" [mainLink]="graphics" [dropdownLinks]="graphicsDropdown" />
           </li>
           <li class="nav-item">
             <a class="nav-link fs-6" routerLink="/booksAndpdf" routerLinkActive="active" aria-current="page" href="#">Books & Pdfs</a>
           </li>
           <li class="nav-item">
-            <app-nav-dropdown [mainLink]="Presentations" [dropdownLinks]="presentationDropdown" />
+            <app-nav-dropdown [pageHeader]="true" [mainLink]="Presentations" [dropdownLinks]="presentationDropdown" />
           </li>
           <li class="nav-item">
             <a class="nav-link fs-6" routerLink="/fonts" routerLinkActive="active" aria-current="page" href="#">Fonts</a>

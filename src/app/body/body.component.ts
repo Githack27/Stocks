@@ -30,15 +30,12 @@ cardLinks = [
 videoLinks = [
   {videosrc: "../../assets/Videos/raining.mp4"},
   {videosrc: "../../assets/Videos/214940_small.mp4"},
-  {videosrc: "../../assets/Videos/230248_small.mp4"},
   {videosrc: "../../assets/Videos/233867_medium.mp4"},
-  {videosrc: "../../assets/Videos/240320_small.mp4"},
+  {videosrc: "../../assets/Videos/dsblast.mp4"},
   {videosrc: "../../assets/Videos/waterfall.mp4"},
-  {videosrc: "../../assets/Videos/droneview.mp4"},
   {videosrc: "../../assets/Videos/book.mp4"},
   {videosrc: "../../assets/Videos/dna.mp4"},
   {videosrc: "../../assets/Videos/watersplash.mp4"},
-  {videosrc: "../../assets/Videos/bombblast.mp4"},
-  {videosrc: "../../assets/Videos/dsblast.mp4"},
+  {videosrc: "../../assets/Videos/bombblast.mp4"}
 ]
 }

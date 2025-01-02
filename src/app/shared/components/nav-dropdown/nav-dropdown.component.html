@@ -1,8 +1,12 @@
 <div class="dropdown">
-  <a class="nav-link fs-6 text-white fw-bold" [href]="mainLink.href">{{ mainLink.text }}</a>
+  <a class="nav-link fs-6 fw-bold"
+  [ngClass]="{'text-black': pageHeader, 'text-white': !pageHeader}"
+  [href]="mainLink.href">{{ mainLink.text }}</a>
   <div class="dropdown-content">
     <div class="grid">
-      <a *ngFor="let link of dropdownLinks" class="nav-link text-center fs-6 text-white fw-bold" [href]="link.href">
+      <a *ngFor="let link of dropdownLinks"
+      class="nav-link text-center text-white fs-6 fw-bold"
+      [href]="link.href">
         {{ link.text }}
       </a>
     </div>

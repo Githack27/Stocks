@@ -1,9 +1,14 @@
 <div class="carousel-container">
-  <div class="blocks" [ngStyle]="{'background-image': 'url(' + currentBackground + ')'}">
+  <div
+    class="blocks"
+    [ngStyle]="{'background-image': 'url(' + currentBackground + ')'}">
     <div
       *ngFor="let block of blocks; let i = index"
       class="block"
-      (mouseover)="onHover(i)">
+      (mouseover)="onHover(i)"
+      (mouseout)="onMouseOut()">
+      <h2>{{block.heading}}</h2>
+      <h6>{{block.captions}}</h6>
     </div>
   </div>
 </div>

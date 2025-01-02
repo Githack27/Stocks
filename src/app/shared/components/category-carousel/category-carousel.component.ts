@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,18 +9,19 @@ import { CommonModule } from '@angular/common';
   styleUrl: './category-carousel.component.css'
 })
 export class CategoryCarouselComponent {
-  blocks = [
-    { id: 1, background: '../../../../assets/carousel/ai-generated.jpg' },
-    { id: 2, background: '../../../../assets/carousel/sports.jpg' },
-    { id: 3, background: '../../../../assets/carousel/watch.jpg' },
-    { id: 4, background: '../../../../assets/carousel/lion.jpg' },
-    { id: 5, background: '../../../../assets/carousel/anime_Art.png' },
-    { id: 5, background: '../../../../assets/carousel/arvr.jpg' }
-  ];
+  @Input() blocks : {id: number, background: string, heading: string, captions: string}[] = [];
 
-  currentBackground = this.blocks[0].background;
+  currentBackground: string = '';
+
+  ngOnInit(): void {
+    this.currentBackground = this.blocks.length > 0 ? this.blocks[0].background : '';
+  }
 
   onHover(index: number): void {
-    this.currentBackground = this.blocks[index].background;
+    this.currentBackground = this.blocks[index]?.background || this.currentBackground;
+  }
+
+  onMouseOut(): void {
+    this.currentBackground = this.blocks.length > 0 ? this.blocks[0].background : '';
   }
 }

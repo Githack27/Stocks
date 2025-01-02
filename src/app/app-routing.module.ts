@@ -9,7 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { BodyComponent } from './body/body.component';
 import { LoginComponent } from './shared/pages/login/login.component';
 import { ImagesComponent } from './shared/pages/images/images.component';
-import { NavDropdownComponent } from './shared/components/nav-dropdown/nav-dropdown.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -19,6 +19,7 @@ import { NavDropdownComponent } from './shared/components/nav-dropdown/nav-dropd
     BodyComponent,
     LoginComponent,
     ImagesComponent,
+    HttpClientModule,
     BrowserModule, RouterModule.forRoot(routes)
   ],
   exports: [RouterModule],
