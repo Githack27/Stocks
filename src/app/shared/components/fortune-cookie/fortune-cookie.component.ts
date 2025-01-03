@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpClient, HttpClientModule, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-fortune-cookie',
@@ -14,25 +14,28 @@ export class FortuneCookieComponent {
   constructor(private http: HttpClient) {}
 
   generateQuote() {
-    const url = 'https://api.forismatic.com/api/1.0/';
-    const params = new HttpParams()
-      .set('method', 'getQuote')
-      .set('format', 'jsonp')
-      .set('lang', 'en')
-      .set('jsonp', 'callback');
+    const url = 'https://fortune-cookie4.p.rapidapi.com/slack';
+    const headers = new HttpHeaders({
+      'x-rapidapi-host': 'fortune-cookie4.p.rapidapi.com',
+      'x-rapidapi-key': 'd170e336b3msh8bdc484dd3df1b1p12f86cjsncf7f285da5f8',
+    });
 
-    const callbackName = 'callback';
+    this.http.get<any>(url, { headers }).subscribe({
+      next: (response) => {
+        this.quoteText = this.cleanFortuneText(response.text) || 'No fortune available!';
+      },
+      error: (error) => {
+        console.error('Error fetching fortune:', error);
+        this.quoteText = 'An error occurred. Please try again.';
+      },
+    });
+  }
 
-    const script = document.createElement('script');
-    script.src = `${url}?${params.toString()}`;
-    script.async = true;
-
-    (window as any)[callbackName] = (data: any) => {
-      this.quoteText = data.quoteText || 'No quote available!';
-      delete (window as any)[callbackName];
-      document.body.removeChild(script);
-    };
-
-    document.body.appendChild(script);
+  cleanFortuneText(originalText: string): string {
+    let cleanedText = originalText.replace("🥠 your fortune reads:", "").trim();
+    if (cleanedText.startsWith("'") && cleanedText.endsWith("'")) {
+      cleanedText = cleanedText.slice(1, -1).trim();
+    }
+    return cleanedText;
   }
 }
