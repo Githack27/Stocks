@@ -1,1 +1,23 @@
-<p>videos works!</p>
+<div class="hkepasegami">
+  <app-page-header></app-page-header>
+
+  <div class="text-center mt-5">
+    <h2>Bored! Looking For Shorts</h2>
+    <p>Mind Blowing Videos and Gifs only for you</p>
+  </div>
+
+  <app-category-video-carousel [blocks]="videosblock"></app-category-video-carousel>
+
+  <app-fortune-cookie></app-fortune-cookie>
+
+  <div class="mx-5 mt-5">
+    <h2>Discover Stunning Visuals</h2>
+    <p>Explore our curated collection of breathtaking stock images.</p>
+  </div>
+  <app-video-gallery [backgroundUrls]="collectionBackgorunds"></app-video-gallery>
+
+  <app-common-banner></app-common-banner>
+  
+  <app-footer></app-footer>
+</div>
+

@@ -9,7 +9,7 @@ import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http'
   styleUrl: './fortune-cookie.component.css'
 })
 export class FortuneCookieComponent {
-  quoteText: string = 'Open a Cookie';
+  quoteText: string = 'Fortune Cookie - Open to See your fortune';
 
   constructor(private http: HttpClient) {}
 

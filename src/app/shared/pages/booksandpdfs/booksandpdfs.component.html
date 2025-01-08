@@ -1,1 +1,24 @@
-<p>booksandpdfs works!</p>
+<div class="hkepasegami">
+  <app-page-header></app-page-header>
+
+  <h3 class="text-center mt-5">Reading Books helps Reading Minds</h3>
+  <p class="text-center">Explore the New Readers in the Market</p>
+  <app-pdf-ppt-slider [files]="files"></app-pdf-ppt-slider>
+
+  <h4 class="text-center">Explore Our Endless Library Collections</h4>
+  <p class="text-center">Pick One to Enter the World of Books</p>
+  <div class="container-fluid my-5">
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide" *ngFor="let data of sliderFiles">
+          <img [src]="data.ImageSource" width="160px" height="220px" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-common-banner></app-common-banner>
+
+  <app-footer></app-footer>
+</div>
+

@@ -26,12 +26,6 @@
   clip-path: polygon(0 0,calc(50% - var(--g)/4) 0,100% calc(50% + var(--g)/4),100% 100%,0 100%);
 }
 
-.gallery-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .gallery-info p {
   color: gray;
 }
@@ -56,10 +50,22 @@ img:hover{
   .gallery{
     width: 100px;
   }
+
+  h4{
+    font-size: 14px !important;
+  }
+
+  p{
+    font-size: 12px !important;
+  }
 }
 
-@media (max-width: 576px){
+@media (max-width: 577px){
   .gallery{
     width: 220px;
+  }
+
+  .menu-icon{
+    display: none;
   }
 }

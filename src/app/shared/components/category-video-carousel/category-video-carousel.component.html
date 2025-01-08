@@ -1,0 +1,21 @@
+<div class="carousel-container">
+  <div class="blocks-wrapper">
+    <video
+      class="background-video"
+      autoplay
+      muted
+      loop
+      [src]="currentVideo">
+    </video>
+    <div
+      class="blocks"
+      *ngFor="let block of blocks; let i = index">
+      <div class="block"
+      (mouseover)="onHover(i)"
+      (mouseout)="onMouseOut()">
+        <h2>{{ block.heading }}</h2>
+        <h6>{{ block.captions }}</h6>
+      </div>
+    </div>
+  </div>
+</div>
