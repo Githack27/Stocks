@@ -1,1 +1,12 @@
-<p>ppt-container works!</p>
+<div class="ppt-container p-5">
+  <div class="ppt-card" *ngFor="let ppt of pptList">
+    <div class="ppt-thumbnail">
+      <img [src]="ppt.thumbnail" alt="PPT Thumbnail" />
+      <div class="slide-info">Slide 1 of {{ ppt.slidesCount }}</div>
+      <button class="view-similar">View Similar</button>
+    </div>
+    <div class="ppt-title">
+      <p>{{ ppt.title }}</p>
+    </div>
+  </div>
+</div>

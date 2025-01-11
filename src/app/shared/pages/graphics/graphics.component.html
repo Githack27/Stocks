@@ -1,1 +1,19 @@
-<p>graphics works!</p>
+<div class="hkepasegami">
+  <app-page-header></app-page-header>
+
+  <h4 class="mt-5 text-center">Try Out The 3D Effects With Pure CSS</h4>
+  <p class="text-center mt-2">We share the talents of developers with you, encourage by trying them out</p>
+  <div class="container d-flex flex-row align-items-center justify-content-center my-5">
+    <div *ngFor="let index of backgroundUrls" class="card-container">
+      <div class="card" [ngStyle]="{'background-image': 'url(' + index.url + ')'}">
+        <div class="overlay">
+          <a class="nav-item text-decoration-none" [href]="index.routeUrl"><p class="overlay-text">{{index.title}}</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <app-footer></app-footer>
+</div>
+

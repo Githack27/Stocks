@@ -14,6 +14,11 @@ import { LoginComponent } from './shared/pages/login/login.component';
 import { ImagesComponent } from './shared/pages/images/images.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PdfPptSliderComponent } from './shared/components/pdf-ppt-slider/pdf-ppt-slider.component';
+import { PresentationsComponent } from './shared/pages/presentations/presentations.component';
+import { Phone3DComponent } from './shared/graphics-components/phone3-d/phone3-d.component';
+import { Mobius3dComponent } from './shared/graphics-components/mobius3d/mobius3d.component';
+import { ClimbingcubesComponent } from './shared/graphics-components/climbingcubes/climbingcubes.component';
+import { Van3dComponent } from './shared/graphics-components/van3d/van3d.component';
 
 @NgModule({
   imports: [
@@ -28,6 +33,11 @@ import { PdfPptSliderComponent } from './shared/components/pdf-ppt-slider/pdf-pp
     PdfViewerModule,
     HttpClientModule,
     PdfPptSliderComponent,
+    PresentationsComponent,
+    Phone3DComponent,
+    Mobius3dComponent,
+    ClimbingcubesComponent,
+    Van3dComponent,
     BrowserModule, RouterModule.forRoot(routes)
   ],
   exports: [RouterModule],

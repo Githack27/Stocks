@@ -1,0 +1,44 @@
+.hkepasegami{
+  background-color: #f4eeff;
+}
+
+.card-container {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-container:hover .overlay {
+  display: flex;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}

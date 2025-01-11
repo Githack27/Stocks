@@ -8,6 +8,11 @@ import { GraphicsComponent } from './shared/pages/graphics/graphics.component';
 import { PresentationsComponent } from './shared/pages/presentations/presentations.component';
 import { FontsandiconsComponent } from './shared/pages/fontsandicons/fontsandicons.component';
 import { BooksandpdfsComponent } from './shared/pages/booksandpdfs/booksandpdfs.component';
+import { Phone3DComponent } from './shared/graphics-components/phone3-d/phone3-d.component';
+import { Mobius3dComponent } from './shared/graphics-components/mobius3d/mobius3d.component';
+import { ClimbingcubesComponent } from './shared/graphics-components/climbingcubes/climbingcubes.component';
+import { Van3dComponent } from './shared/graphics-components/van3d/van3d.component';
+
 
 export const routes: Routes = [
   { path: '', component: BodyComponent },
@@ -18,5 +23,9 @@ export const routes: Routes = [
   { path: 'graphics', component: GraphicsComponent},
   { path: 'presentations', component: PresentationsComponent},
   { path: 'fonts', component: FontsandiconsComponent},
-  { path: 'booksAndpdf', component: BooksandpdfsComponent}
+  { path: 'booksAndpdf', component: BooksandpdfsComponent},
+  { path: 'phonenavigation3d', component: Phone3DComponent},
+  { path: 'mobius3deffect', component: Mobius3dComponent},
+  { path: 'climbingCubes', component: ClimbingcubesComponent},
+  { path: '3dvaneffect', component: Van3dComponent}
 ];

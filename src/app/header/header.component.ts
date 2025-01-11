@@ -17,7 +17,7 @@ export class HeaderComponent {
   navigateToLogin() {
     this.router.navigate(['/login']);
   }
-  graphics = { text: 'Graphics', href: '#' };
+  graphics = { text: 'Graphics', href: '/graphics' };
   graphicsDropdown = [
     { text: 'Templates', href: '#' },
     { text: '3D Models', href: '#' },
@@ -28,7 +28,7 @@ export class HeaderComponent {
     { text: 'Wallpaper', href: '#' },
     { text: 'Cards', href: '#' }
   ];
-  Presentations = { text: 'Presentation Templates', href: '#' };
+  Presentations = { text: 'Presentation Templates', href: '/presentations' };
   presentationDropdown = [
     { text: 'Business', href: '#' },
     { text: 'Education', href: '#' },
