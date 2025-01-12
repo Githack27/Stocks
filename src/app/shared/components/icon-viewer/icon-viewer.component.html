@@ -1,0 +1,9 @@
+<div class="icon-container px-5">
+  <a class="text-body-emphasis text-decoration-none" *ngFor="let data of iconsList">
+    <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded fs-1">
+      <i [class]="data.link"></i>
+    </div>
+    <div class="name text-muted text-decoration-none text-center pt-1">{{data.desc}}</div>
+  </a>
+</div>
+

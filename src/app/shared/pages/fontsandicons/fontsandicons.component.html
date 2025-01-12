@@ -1,1 +1,33 @@
-<p>fontsandicons works!</p>
+<div class="hkepasegami">
+  <app-page-header></app-page-header>
+
+  <div class="body mt-5">
+    <p aria-label="CodePen">
+      <span data-text="E">E</span>
+      <span data-text="X">X</span>
+      <span data-text="P">P</span>
+      <span data-text="L">L</span>
+      <span data-text="O">O</span>
+      <span data-text="R">R</span>
+      <span data-text="E">E</span>
+    </p>
+  </div>
+
+
+  <div class="d-flex flex-row justify-content-between px-5 mt-5 mb-3">
+    <h3 class="m-0">ICONS</h3>
+    <div>
+      <input type="search" class="form-control" placeholder="Search" />
+    </div>
+  </div>
+
+  <div class="align-self-center mb-5">
+    <app-icon-viewer [iconsList]="iconsData"></app-icon-viewer>
+  </div>
+
+  <h4 class="text-center mt-5">Bored of Using Simple Fonts</h4>
+  <div class="text-center p-0">Fire your Designs with Stylish Fonts in our Library</div>
+  <app-font-viewer></app-font-viewer>
+
+  <app-footer></app-footer>
+</div>

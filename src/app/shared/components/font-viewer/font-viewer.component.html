@@ -1,0 +1,14 @@
+<div class="d-flex flex-column px-5 mt-5">
+  <div class="d-flex flex-column gap-2" *ngFor="let font of fonts">
+    <div class="font-container d-flex flex-row gap-2">
+      <h5>{{ font.fname }}</h5>
+      <span>|</span>
+      <h5>{{ font.fname }}</h5>
+    </div>
+
+    <div class="font-item fs-2 mb-4">
+      <p [style]="{ 'font-family': font.fname }">The Quick Brown Fox, Jumps Over the Lazy Dog</p>
+      <hr>
+    </div>
+  </div>
+</div>
