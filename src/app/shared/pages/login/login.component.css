@@ -1,22 +1,14 @@
-.login-container{
-  height: 100vh;
-  background-color: #212121;
-}
-
 .wrapper {
-  --input-focus: #007afd;
+  --input-focus: #2d8cf0;
   --font-color: #323232;
   --font-color-sub: #666;
   --bg-color: #fff;
   --bg-color-alt: #666;
   --main-color: #323232;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .switch {
-  transform: translateY(-220px);
+  transform: translateY(100px);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -33,7 +25,8 @@
   left: -70px;
   top: 0;
   width: 100px;
-  color: white;
+  text-decoration: underline;
+  color: var(--font-color);
   font-weight: 600;
 }
 
@@ -44,7 +37,7 @@
   top: 0;
   width: 100px;
   text-decoration: none;
-  color: white;
+  color: var(--font-color);
   font-weight: 600;
 }
 
@@ -57,15 +50,15 @@
 .slider {
   box-sizing: border-box;
   border-radius: 5px;
-  border: 2px solid white;
-  box-shadow: 4px 4px white;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
   position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: black;
+  background-color: var(--bg-colorcolor);
   transition: 0.3s;
 }
 
@@ -75,44 +68,13 @@
   content: "";
   height: 20px;
   width: 20px;
-  border: 2px solid white;
+  border: 2px solid var(--main-color);
   border-radius: 5px;
   left: -2px;
   bottom: 2px;
-  background-color: black;
-  box-shadow: 0 3px 0 white;
-  transition: 0.3s;
-}
-
-.button-log {
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  border: 2px solid var(--main-color);
   background-color: var(--bg-color);
-  box-shadow: 4px 4px var(--main-color);
-  color: var(--font-color);
-  font-size: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.button-log:hover {
-  transition: all 600ms ease-in-out;
-  background-color: #212121;
-}
-
-.button-log:active, .button-confirm:active {
-  box-shadow: 0px 0px var(--main-color);
-  transform: translate(3px, 3px);
-}
-
-.login-with {
-  display: flex;
-  align-self: center;
-  gap: 20px;
+  box-shadow: 0 3px 0 var(--main-color);
+  transition: 0.3s;
 }
 
 .toggle:checked + .slider {
@@ -123,19 +85,22 @@
   transform: translateX(30px);
 }
 
+.toggle:checked ~ .card-side:before {
+  text-decoration: none;
+}
+
+.toggle:checked ~ .card-side:after {
+  text-decoration: underline;
+}
+
 .flip-card__inner {
   width: 300px;
   height: 350px;
   position: relative;
   background-color: transparent;
-  perspective: 1000px;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-}
-
-.flip-card__inner {
-  pointer-events: none;
 }
 
 .toggle:checked ~ .flip-card__inner {
@@ -215,10 +180,41 @@
   height: 40px;
   border-radius: 5px;
   border: 2px solid var(--main-color);
-  background-color: #ff8d21;
+  background-color: var(--bg-color);
   box-shadow: 4px 4px var(--main-color);
   font-size: 17px;
   font-weight: 600;
   color: var(--font-color);
   cursor: pointer;
+}
+
+.button-log {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  color: var(--font-color);
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-log:hover {
+  transition: all 600ms ease-in-out;
+  background-color: #212121;
+}
+
+.button-log:active, .button-confirm:active {
+  box-shadow: 0px 0px var(--main-color);
+  transform: translate(3px, 3px);
+}
+
+.login-with {
+  display: flex;
+  align-self: center;
+  gap: 20px;
 }
