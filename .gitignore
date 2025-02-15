@@ -11,7 +11,7 @@
 src/assets/
 npm-debug.log
 yarn-error.log
-
+backend/node_modules
 # IDEs and editors
 .idea/
 .project
