@@ -1,14 +1,27 @@
-*{
+/* 🟣 Global Styles */
+* {
   background-color: #F4EEFF;
 }
 
-.ntbcustom{
+/* 🔹 Custom Sign-Up Button */
+.ntbcustom {
   background-color: black;
   color: white;
   font-weight: 600;
-  border:none;
+  border: none;
   outline: none;
   border-radius: 0;
+}
+/* Remove underline from the user name */
+.user-profile a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Keeps the text color consistent */
+}
+
+/* Ensure it does not turn blue on hover */
+.user-profile a:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 .ntbcustom:hover {
@@ -18,60 +31,103 @@
   border: 1px solid #ff8d21;
 }
 
-.signUp-banner{
+/* 🔹 Sign-Up Banner */
+.signUp-banner {
   height: 80px;
   background-color: #f0f4fd;
   border-radius: 15px;
 }
 
-.banner-para p{
+.banner-para p {
   font-size: 18px;
 }
 
-.stocks-container{
+/* 🔹 Stocks Container (Grid Layout) */
+.stocks-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
 }
 
-@media (max-width:1050px){
-  .stocks-container{
+/* 🔹 Responsive Styles */
+@media (max-width: 1050px) {
+  .stocks-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width:900px){
-  .signUp-banner p{
+@media (max-width: 900px) {
+  .signUp-banner p {
     font-size: 14px;
   }
-  .signUp-btn{
-    width: 130px;
-    font-size: 14;
-  }
-}
-
-@media (max-width:780px){
-  .signUp-banner p{
-    font-size: 14px;
-  }
-  .signUp-btn{
+  .signUp-btn {
     width: 130px;
     font-size: 14px;
   }
 }
 
-@media (max-width:640px){
-  .signUp-banner p{
+@media (max-width: 780px) {
+  .signUp-banner p {
     font-size: 14px;
   }
-  .ntbcustom{
+  .signUp-btn {
+    width: 130px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .signUp-banner p {
+    font-size: 14px;
+  }
+  .ntbcustom {
     width: 130px;
     font-size: 12px;
   }
 }
 
-@media (max-width:540px){
-  .stocks-container{
+@media (max-width: 540px) {
+  .stocks-container {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+/* 🔹 User Profile (Flexbox Layout) */
+.user-profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* 🔹 User Avatar */
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+/* 🔹 Logout Button (Hidden by Default, Fades In on Hover) */
+.logout-btn {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 8px;
+  background: linear-gradient(to right, #6a0dad, #008080);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* 🔹 Show Logout Button on Hover (Fade-In Effect) */
+.user-profile:hover .logout-btn {
+  opacity: 1;
+  visibility: visible;
 }

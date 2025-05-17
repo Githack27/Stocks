@@ -1,22 +1,48 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Auth, user, User } from '@angular/fire/auth';
+import { CommonModule } from '@angular/common';
 import { NavDropdownComponent } from "../shared/components/nav-dropdown/nav-dropdown.component";
 import { ButtonToggleComponent } from "../shared/components/button-toggle/button-toggle.component";
-import { Router, RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NavDropdownComponent, ButtonToggleComponent, RouterLink, RouterLinkActive],
+  imports: [CommonModule, NavDropdownComponent, ButtonToggleComponent, RouterLink, RouterLinkActive],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrls: ['./header.component.css']
 })
+export class HeaderComponent implements OnInit {
+  user$: Observable<User | null>; // Observable for current user
+  userName: string = '';
+  userAvatar: string = '../../assets/Images/default-user.png'; // Default avatar
 
-export class HeaderComponent {
-  constructor(private router: Router) {}
+  constructor(private router: Router, private auth: Auth) {
+    this.user$ = user(auth); // Real-time user stream
+  }
 
-  navigateToLogin() {
+  ngOnInit(): void {
+    this.user$.subscribe(user => {
+      if (user) {
+        this.userName = user.displayName || 'Anonymous';
+        this.userAvatar = user.photoURL || '../../assets/images/default-user.png';
+      }
+    });
+  }
+
+  // Navigate to user profile page
+  goToUserProfile(): void {
+    this.router.navigate(['/user-profile']);
+  }
+
+  // Navigate to login page
+  navigateToLogin(): void {
     this.router.navigate(['/login']);
   }
+
+  // Navigation links for dropdowns
   graphics = { text: 'Graphics', href: '/graphics' };
   graphicsDropdown = [
     { text: 'Templates', href: '#' },
@@ -28,6 +54,7 @@ export class HeaderComponent {
     { text: 'Wallpaper', href: '#' },
     { text: 'Cards', href: '#' }
   ];
+
   Presentations = { text: 'Presentation Templates', href: '/presentations' };
   presentationDropdown = [
     { text: 'Business', href: '#' },

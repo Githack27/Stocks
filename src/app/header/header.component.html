@@ -46,8 +46,23 @@
       </div>
       <div class="d-flex flex-row align-self-center mb-lg-0 mb-3">
         <button class="ntbcustom btn btn-primary me-2">Pricing</button>
-        <button class="ntbcustom btn btn-primary" (click)="navigateToLogin()">Sign In</button>
+        
+        <ng-container *ngIf="user$ | async as user; else showLogin">
+          <div (click)="goToUserProfile()" class="user-profile d-flex align-items-center position-relative" style="cursor: pointer;">
+            <img [src]="user.photoURL || '../../assets/Images/default-user.png'" alt="User Avatar" class="user-avatar" />
+            <span class="fw-bold ms-2">{{ user.displayName || user.email }}</span>
+          </div>
+        </ng-container>
+        
+        <ng-template #showLogin>
+          <button class="btn btn-outline-light ms-2" (click)="navigateToLogin()">Login</button>
+        </ng-template>
+        
+        
+
+        
       </div>
+      
     </div>
   </div>
   <div class="desc align-self-center text-center">
