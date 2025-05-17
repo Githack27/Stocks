@@ -19,7 +19,7 @@ import { Phone3DComponent } from './shared/graphics-components/phone3-d/phone3-d
 import { Mobius3dComponent } from './shared/graphics-components/mobius3d/mobius3d.component';
 import { ClimbingcubesComponent } from './shared/graphics-components/climbingcubes/climbingcubes.component';
 import { Van3dComponent } from './shared/graphics-components/van3d/van3d.component';
-
+import { AuthService } from './services/DataServices/login/auth.service';
 @NgModule({
   imports: [
     AppComponent,
@@ -41,6 +41,6 @@ import { Van3dComponent } from './shared/graphics-components/van3d/van3d.compone
     BrowserModule, RouterModule.forRoot(routes)
   ],
   exports: [RouterModule],
-  providers: [],
+  providers: [AuthService],
 })
 export class AppModule {}

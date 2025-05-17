@@ -17,17 +17,17 @@ import { CommonBannerComponent } from "../../components/common-banner/common-ban
 })
 export class VideosComponent {
   videosblock = [
-    { id: 1, type: "video", background: '../../../../assets/Videos/grilledbbq.mp4', heading: 'Cooking', captions: 'This is an amazing technology' },
-    { id: 2, type: "video", background: '../../../../assets/Videos/vegetable cutting.mp4', heading: 'Veggies', captions: 'This is an amazing technology' },
+    { id: 1, type: "video", background: 'https://detqel.blog/wp-content/uploads/2025/05/grilledbbq.mp4', heading: 'Cooking', captions: 'This is an amazing technology' },
+    { id: 2, type: "video", background: 'https://detqel.blog/wp-content/uploads/2025/05/vegetable-cutting.mp4', heading: 'Veggies', captions: 'This is an amazing technology' },
     { id: 3, type: "video", background: '../../../../assets/Videos/book.mp4', heading: 'Feel Good', captions: 'This is an amazing technology' },
     { id: 4, type: "video", background: '../../../../assets/Videos/dsblast.mp4', heading: 'Anime', captions: 'This is an amazing technology' },
-    { id: 5, type: "video", background: '../../../../assets/Videos/raining.mp4', heading: 'Nature', captions: 'This is an amazing technology' }]
+    { id: 5, type: "video", background: 'https://detqel.blog/wp-content/uploads/2025/05/raining.mp4', heading: 'Nature', captions: 'This is an amazing technology' }]
 
     collectionBackgorunds = [
-      {heading: "Nature", url: "../../../../assets/Videos/VideoGalleryPart1.mp4", resources: 150},
-      {heading: "Anime", url: "../../../../assets/Videos/VideoGalleryPart2.mp4", resources: 150},
-      {heading: "Animals", url: "../../../../assets/Videos/AnimalsPart2.mp4", resources: 150},
-      {heading: "Foods", url: "../../../../assets/Videos/Foods.mp4", resources: 150}
+      {heading: "Nature", url: "https://detqel.blog/wp-content/uploads/2025/05/VideoGalleryPart1.mp4", resources: 150},
+      {heading: "Anime", url: "https://detqel.blog/wp-content/uploads/2025/05/VideoGalleryPart2.mp4", resources: 150},
+      {heading: "Animals", url: "https://detqel.blog/wp-content/uploads/2025/05/AnimalsPart2.mp4", resources: 150},
+      {heading: "Foods", url: "https://detqel.blog/wp-content/uploads/2025/05/Foods.mp4", resources: 150}
       ]
 
     onHover(index: number) {
